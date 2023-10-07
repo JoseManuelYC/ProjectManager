@@ -9,3 +9,26 @@ export const GET_PROJECTS= gql`
   }
 }
 `;
+export const GET_PROJECT =gql`
+query($id: ID!){
+  project(_id: $id) {
+    _id
+    createdAt
+    name
+    description
+    tasks {
+      _id
+      title
+    }
+  }
+}
+`;
+export const CREATE_PROJECT = gql`
+mutation($name: String, $description: String){
+  createProject(name: $name,description: $description) {
+    _id
+    name
+    description
+  }
+}
+`;
