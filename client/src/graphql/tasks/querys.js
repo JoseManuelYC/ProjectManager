@@ -8,3 +8,10 @@ mutation($title: String, $projectId: ID){
   }
 }
 `;
+export const DELETE_TASK = gql`
+mutation($id: ID!){
+  deleteTask(_id: $id) {
+    _id
+    title
+  }
+}`;
