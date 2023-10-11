@@ -25,10 +25,10 @@ export function TaskForm() {
       <input
         type="text"
         name="title"
-        className='bg-zinc-900 w-full p-2 rounded-lg mb-2'
+        className='bg-white-900 w-full p-5 rounded-lg mb-4 mt-4'
         placeholder='Add a Task'
         />
-      <button className='bg-yellow-400 w-full p-2 rounded-lg'>Add Task</button>
+      <button className='bg-yellow-400 text-stone w-full p-2 rounded-lg hover:bg-yellow-500 hover:cursor-pointer'>Add Task</button>
     </form>
   )
 }

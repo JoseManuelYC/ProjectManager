@@ -17,7 +17,7 @@ export function TaskCard({tasks}) {
     })
   }
   return (
-    <div className='bg-zinc-900 px-5 py-3 mb-3 flex justify-between'>
+    <div className='bg-neutral-500 px-5 py-3 mb-3 mt-4 flex justify-between rounded-lg'>
       <h1>{tasks.title}</h1>
       <button onClick={ () => onDeleteTask() }><AiOutlineDelete /></button>
     </div>

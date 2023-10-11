@@ -48,11 +48,13 @@ export const ProjectsForm = () => {
         onChange={handleChange}
         className="bg-zinc-800 text-white rounded-lg shadow-lg p-4 block w-full mb-3"
         ></textarea>
+        <div className="flex justify-center ">
       <button
-      className="bg-yellow-500 px-4 py-1 rounded-md text-lg mb-3 disabled:bg-zinc-600"
+      className="bg-yellow-500 px-4 py-1 rounded-md text-lg mb-3 disabled:bg-zinc-600 hover:bg-yellow-600"
         disabled={!project.name || !project.description || loading}
       >Save
       </button>
+        </div>
     </form>
   )
 }
